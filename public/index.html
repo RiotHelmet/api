@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dokumentation</h1>
+    <h1>Routes</h1>
+    <ul>
+      <li>GET /monkeys - returnerar alla apor</li>
+      <li>GET /monkeys/{id} - returnerar en specifik apa</li>
+      <li>GET /monkeys/{id}/habitat - returnerar en specifik apas boende</li>
+      <li>GET /monkeys/{id}/diet - returnerar en specifik apas kost</li>
+      <li>
+        GET /monkeys/{id}/behaviour - returnerar en specifik apas beteende
+      </li>
+
+      <li>
+        POST /monkeys - skapar en ny apa, accepterar endast JSON objekt på
+        formatet Monkey : apa, habitat : boende, diet : kost, behaviour :
+        beteende
+      </li>
+      <li>PUT /monkeys/{id} - redigerar en specifik apa angivet av id.</li>
+      <li>
+        POST /login - inloggning, accepterar endast JSON objekt på formatet
+        username : användarnamn, password : lösenord
+      </li>
+      <li>POST /signup - skapar en ny användare</li>
+      <li>Alla routes förutom login behöver autentiseras av en token</li>
+    </ul>
+    <script src="db.js"></script>
+  </body>
+</html>
